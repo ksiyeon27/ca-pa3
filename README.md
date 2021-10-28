@@ -230,7 +230,7 @@ ALU operation:    1180661 instructions (60.70%)
 Control transfer: 315629 instructions (16.23%)
 ```
 
-If the value of the `t6` (or `x31`) register is nonzero, it means that your program has failed to pass all test cases.  If you failed a test case, it shall stop running and the index of the test case will be stored in `t6`. The memory address of the first incorrect word will be stored in 't5'. For example, if the value of `t6` is equal to 0x00000003, it means that your program passed test 1 and 2, but didn't pass test 3. If the value of `t5` is equal to 0x80018020, it means that your program has failed to match the value of the answer output at the memory address 0x80018020.
+If the value of the `t6` (or `x31`) register is nonzero, it means that your program has failed to pass all test cases.  If you failed a test case, it shall stop running and the index of the test case will be stored in `t6`. The memory address of the first incorrect word will be stored in `t5`. For example, if the value of `t6` is equal to 0x00000003, it means that your program passed test 1 and 2, but didn't pass test 3. If the value of `t5` is equal to 0x80018020, it means that your program has failed to match the value of the answer output at the memory address 0x80018020.
 
 Please note that the simulator `snurisc.py` has the ability to show various log information. For example, if you specify the log level 3 (`-l 3`), you can see each instruction executed by the simulator as shown below.
 
